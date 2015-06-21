@@ -14,7 +14,7 @@ fpath_train <- "UCI HAR Dataset/train/X_train.txt"
 fpath_trainAct <- "UCI HAR Dataset/train/y_train.txt"
 fpath_trainSubj <- "UCI HAR Dataset/train/subject_train.txt"
 
-# file paths - 
+# file paths - features and acitivies
 fpath_features <- "UCI HAR Dataset/features.txt"
 fpath_activity <- "UCI HAR Dataset/activity_labels.txt"
 
