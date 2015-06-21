@@ -30,6 +30,7 @@ The code does the following
 
 6. Creates a summary data frame, containing the mean of each variable, for each combination of Subject and Activity
   * this step creates a data frame called 'summaryData'
+  * also outputs the summaryData data frame to a text file, 'tidydata.txt'
   
   
 
