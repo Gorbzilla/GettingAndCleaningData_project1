@@ -67,7 +67,7 @@ names(reducedData)<-gsub("BodyBody", "Body", names(reducedData))
 
 ### 5. Create Activity variable from activity data frame
 tidyData <- merge(reducedData, activity, by="actvNum")
-# remove actvNum variable
+# remove actvNum variable, its no longer needed
 tidyData[,"actvNum"] <- NULL
 #Order data
 tidyData <- tidyData[order(tidyData$Subject, tidyData$Activity),]
@@ -78,4 +78,5 @@ tidyData <- tidyData[order(tidyData$Subject, tidyData$Activity),]
 summaryData <- aggregate(. ~ Activity + Subject,
                         tidyData, mean)
 
+# writes summaryData to a text file called tidydata.txt
 write.table(summaryData, file="tidydata.txt", row.name=FALSE)
